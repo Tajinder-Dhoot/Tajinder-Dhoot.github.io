@@ -219,3 +219,45 @@ button {
 .resume > ul> a:visited {
     text-decoration: none;
 }
+
+.skills > span {
+    font-weight: bold;
+}
+
+/*--------------------------Achievements---------------------*/
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+}
+
+.cert_image {
+    display: flex;
+    justify-content: center;
+}
+
+.cert_image > img {
+    width: 70%;
+
+    margin: 40px 0;
+}
+
+/*-------------------------Projects----------------------*/
+
+.projects {
+    width: 60%;
+    margin: auto;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+.projects > h3 {
+    margin: 20px 0;
+}
+
+.projects > a {
+    color: black;
+}
+
