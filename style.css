@@ -27,13 +27,6 @@ img {
     object-fit: contain;
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 5px;
-}
-
 a {
     padding: 10px;
 }
@@ -42,8 +35,23 @@ a:link {
     text-decoration: none;
 }
 
-nav > a:visited {
+a:visited {
     text-decoration: none;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+nav > a {
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: black;
 }
 
 .main_body {
@@ -102,4 +110,112 @@ footer {
     align-items: center;
     height: 50px;
     background-color: dimgrey;
+}
+
+/*--------------------About page-----------------------*/
+
+.about_me {
+    width: 50%;
+    line-height: 1.6;
+    background-color: blanchedalmond;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h1 {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.qualifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qual {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    background-color: antiquewhite;
+    width: 60%;
+    height: 250px;
+}
+
+.qual > img {
+    width: 300px;
+}
+
+.qual_info {
+    text-align: center;
+    margin: auto 0;
+}
+
+.hobbies {
+    font-size: 1.6em;
+    line-height: 1.6;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+/*--------------------------Resume page--------------*/
+.download_button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 20px;
+    margin: 20px auto;
+    alig;
+    border: none;
+    border-radius: 10px;
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.resume {
+    background-color: blanchedalmond;
+    font-size: 1.3em;
+    line-height: 1.6;
+    width: 80%;
+    margin: auto;
+}
+
+.resume > h1 {
+    padding-left: 40px;
+    padding-top: 20px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.resume > .education {
+    padding-left: 40px;
+}
+
+.resume > h5 {
+    font-weight: normal;
+}
+
+.resume > ul {
+    list-style-type: disc;
+}
+
+.resume > ul > a:link {
+    text-decoration: none;
+}
+
+.resume > ul> a:visited {
+    text-decoration: none;
 }
