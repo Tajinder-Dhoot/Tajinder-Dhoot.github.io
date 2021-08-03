@@ -5,13 +5,29 @@
 header {
     display: flex;
     height: 150px;
+    background-color: #090A0E;
+}
+
+.container {
+    background-color: #F3F5F9;
+}
+
+img {
+    width: 100px;
+    object-fit: contain;
 }
 
 header > .profile_image {
     flex: 0.3;
-    background-color: antiquewhite;
     display: flex;
     justify-content: center;
+    margin: auto 0;
+}
+
+header > .profile_image > img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 header > .profile_name {
@@ -19,12 +35,7 @@ header > .profile_name {
     justify-content: center;
     align-items: center;
     flex: 0.7;
-    background-color: beige;
-}
-
-img {
-    width: 100px;
-    object-fit: contain;
+    color: white;
 }
 
 a {
@@ -44,34 +55,38 @@ nav {
     width: 90%;
     justify-content: flex-end;
     padding: 5px;
-    margin-right: 50px;
+    margin: 20px 50px 20px 0;
 }
 
 nav > a {
     margin: 0 20px;
     font-size: 1.2em;
     font-weight: 700;
-    color: black;
+    color: white;
+    background-color: #9AB19A;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
 .main_body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: cornflowerblue;
     height: 700px;
 }
 
 .main_body > .cover_letter {
-    background-color: cadetblue;
+    color: white;
+    background-color: #090A0E;
     height: 80%;
     flex: 0.5;
+    border-radius: 20px;
 }
 
 .side_card {
     height: 300px;
     width: 200px;
-    background-color: darkolivegreen;
+    background-color: #090A0E;
     position: fixed;
     left: 0;
     top: 35vh;
@@ -80,10 +95,13 @@ nav > a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 0 30px 30px 0;
 }
 
 .side_card > a {
     display: block;
+    color: #9AB19A;
+    font-size: large;
 }
 
 .skills_container {
@@ -104,12 +122,8 @@ nav > a {
     width: 70%;
 }
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
-    background-color: dimgrey;
+.skills_row > .skill_logo {
+    margin: 25px;
 }
 
 /*--------------------About page-----------------------*/
@@ -117,8 +131,9 @@ footer {
 .about_me {
     width: 50%;
     line-height: 1.6;
-    background-color: blanchedalmond;
-    margin: auto;
+    color: white;
+    background-color: #090A0E;
+    margin: 100px auto 0 auto;
     padding: 50px;
     border-radius: 10px;
     font-weight: bold;
@@ -142,7 +157,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
-    background-color: antiquewhite;
+    color: white;
+    background-color: #090A0E;
     width: 60%;
     height: 250px;
 }
@@ -178,23 +194,25 @@ button {
     alig;
     border: none;
     border-radius: 10px;
-    background-color: darkolivegreen;
+    background-color:#9AB19A;
     color: white;
     font-size: 1.1em;
     cursor: pointer;
 }
 
 .resume {
-    background-color: blanchedalmond;
+    color: #c0b7b1;
+    background-color: #090A0E;
     font-size: 1.3em;
     line-height: 1.6;
     width: 80%;
     margin: auto;
+    border-radius: 20px;
 }
 
 .resume > h1 {
-    padding-left: 40px;
-    padding-top: 20px;
+    width: 100%;
+    padding: 20px 40px;
     margin: 0;
     text-align: left;
     font-size: 1.3em;
@@ -208,20 +226,25 @@ button {
     font-weight: normal;
 }
 
-.resume > ul {
-    list-style-type: disc;
-}
-
-.resume > ul > a:link {
-    text-decoration: none;
+.resume > a:link {
+    text-decoration: #c0b7b1 ;
 }
 
 .resume > ul> a:visited {
-    text-decoration: none;
+    text-decoration-color: #c0b7b1;
+    text-decoration-line: underline;
+}
+
+.resume > a {
+    color: #c0b7b1;
 }
 
 .skills > span {
     font-weight: bold;
+}
+
+.last_bullet {
+    margin-bottom: 20px;
 }
 
 /*--------------------------Achievements---------------------*/
@@ -255,9 +278,20 @@ button {
 
 .projects > h3 {
     margin: 20px 0;
+    color: #090A0E;
+
 }
 
 .projects > a {
-    color: black;
+    color: #090A0E;
 }
 
+/*----------------------- Footer -----------------------*/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    color: white;
+    background-color:#090A0E;
+}
