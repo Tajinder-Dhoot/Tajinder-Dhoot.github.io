@@ -307,12 +307,9 @@ footer {
 .intro {
     display: flex;
     align-items: center;
-    /*background-image: url(/images/profile.jpg);
-    background-blend-mode: 0.5;*/
+    width: 80%;
     height: 700px;
-   /* background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;*/
+    margin: auto;
 }
 
 .intro_image {
@@ -320,13 +317,18 @@ footer {
     flex: 0.5;
 }
 
+.intro_image > img {
+    width: 100%;
+    object-fit: contain;
+}
+
 .intro_bio {
+    flex: 0.5;
     color: #BE431F;
     text-align: center;
 }
 
-.intro_image > img {
+.intro_bio > h1 {
+    margin: 0;
     width: 100%;
-    object-fit: contain;
-
 }
