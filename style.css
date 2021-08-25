@@ -295,3 +295,38 @@ footer {
     color: white;
     background-color:#090A0E;
 }
+
+
+
+/*----------------------new home page ----------------*/
+.landing_window {
+    height: 100vh;
+    background-color: #DBDBD6;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    /*background-image: url(/images/profile.jpg);
+    background-blend-mode: 0.5;*/
+    height: 700px;
+   /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+.intro_image {
+    opacity: 0.6;
+    flex: 0.5;
+}
+
+.intro_bio {
+    color: #BE431F;
+    text-align: center;
+}
+
+.intro_image > img {
+    width: 100%;
+    object-fit: contain;
+
+}
