@@ -332,3 +332,63 @@ footer {
     margin: 0;
     width: 100%;
 }
+
+
+/*------------------------------------home_new1--------------------------------*/
+.landing_view {
+    height: 100vh;
+    background-color: #fff;
+}
+
+.bio_section {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.bio {
+    width: 100%;
+    line-height: 2.5em;
+}
+
+.skills_title {
+    width: 100%;
+    height: 150px;
+    color: white;
+    background-color: black;
+    font-size: 2.5em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.skills_container {
+    width: 60%;
+    margin: auto;
+}
+
+.skill {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+}
+.skill_name {
+    flex: 0.5;
+}
+
+.skill_logo {
+    flex: 0.5;
+}
+
+.skill_logo > img {
+    width: 75px;
+    object-fit: contain;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.skill {
+    border-bottom: 1px solid grey;
+}
