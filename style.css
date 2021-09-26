@@ -38,8 +38,24 @@ header > .profile_name {
     color: white;
 }
 
-a {
-    padding: 10px;
+nav {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+nav > a {
+    width: 80px;
+    text-align: center;
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    background-color: #9AB19A;
+    padding: 5px 15px;
+    border-radius: 5px;
+
 }
 
 a:link {
@@ -50,30 +66,13 @@ a:visited {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    width: 90%;
-    justify-content: flex-end;
-    padding: 5px;
-    margin: 20px 50px 20px 0;
-}
-
-nav > a {
-    margin: 0 20px;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: white;
-    background-color: #9AB19A;
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
 .main_body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 700px;
 }
+*/
 
 .main_body > .cover_letter {
     color: white;
@@ -183,6 +182,7 @@ h1 {
 
 
 /*--------------------------Resume page--------------*/
+
 .download_button {
     display: flex;
     justify-content: center;
@@ -191,7 +191,6 @@ h1 {
 button {
     padding: 20px;
     margin: 20px auto;
-    alig;
     border: none;
     border-radius: 10px;
     background-color:#9AB19A;
@@ -199,6 +198,7 @@ button {
     font-size: 1.1em;
     cursor: pointer;
 }
+
 
 .resume {
     color: #c0b7b1;
@@ -334,7 +334,7 @@ footer {
 }
 
 
-/*------------------------------------home_new1--------------------------------*/
+/*------------------------------------home_new1 and index page--------------------------------*/
 .landing_view {
     height: 100vh;
     background-color: #fff;
