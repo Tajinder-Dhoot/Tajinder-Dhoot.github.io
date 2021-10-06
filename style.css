@@ -72,7 +72,6 @@ a:visited {
     align-items: center;
     height: 700px;
 }
-*/
 
 .main_body > .cover_letter {
     color: white;
@@ -349,6 +348,7 @@ footer {
 }
 
 .bio_section {
+    display: flex;
     width: 60%;
     margin: auto;
     display: flex;
@@ -356,8 +356,9 @@ footer {
 }
 
 .bio {
-    width: 100%;
+    width: 70%;
     line-height: 2.5em;
+    margin: 0 auto;
 }
 
 .skills_title {
@@ -376,12 +377,19 @@ footer {
     margin: auto;
 }
 
+.skills_container > h1 {
+    margin: 40px auto 10px auto;
+}
+
 .skill {
     display: flex;
     width: 90%;
+    height: 100px;
     text-align: center;
     align-items: center;
+    border-bottom: 2px solid #c5c4c4;
 }
+
 .skill_name {
     flex: 0.5;
 }
@@ -397,6 +405,6 @@ footer {
     border-radius: 10px;
 }
 
-.skill {
-    border-bottom: 1px solid grey;
+.skill_logo_big > img {
+    width: 50px;
 }
