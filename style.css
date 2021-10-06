@@ -2,14 +2,16 @@
     margin: 0;
 }
 
+.landing_view {
+    height: 100vh;
+    background-color: #fff;
+}
+
 header {
     display: flex;
     height: 150px;
     background-color: #090A0E;
-}
-
-.container {
-    background-color: #F3F5F9;
+    border-bottom: 2px solid #c5c4c4;
 }
 
 img {
@@ -40,22 +42,22 @@ header > .profile_name {
 
 nav {
     display: flex;
-    width: 90%;
     justify-content: flex-end;
-    margin: 20px 0;
+    background-color: black;
 }
 
 nav > a {
     width: 80px;
     text-align: center;
-    margin: 0 20px;
+    padding: 15px 15px;
     font-size: 1.2em;
     font-weight: 700;
     color: white;
-    background-color: #9AB19A;
-    padding: 5px 15px;
-    border-radius: 5px;
+}
 
+nav > a:hover {
+    border-left: 1px solid #c5c4c4;
+    border-right: 1px solid #c5c4c4;
 }
 
 a:link {
@@ -66,62 +68,72 @@ a:visited {
     text-decoration: none;
 }
 
-.main_body {
+.bio_section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    text-align: center;
 }
 
-.main_body > .cover_letter {
+.bio {
+    width: 70%;
+    line-height: 2.5em;
+    margin: 0 auto;
+}
+
+.skills_title {
+    width: 100%;
+    height: 150px;
     color: white;
-    background-color: #090A0E;
-    height: 80%;
-    flex: 0.5;
-    border-radius: 20px;
-}
-
-.side_card {
-    height: 300px;
-    width: 200px;
-    background-color: #090A0E;
-    position: fixed;
-    left: 0;
-    top: 35vh;
-    z-index: 10;
+    background-color: black;
+    font-size: 2.5em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-    border-radius: 0 30px 30px 0;
-}
-
-.side_card > a {
-    display: block;
-    color: #9AB19A;
-    font-size: large;
 }
 
 .skills_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%;
+    margin: auto;
 }
 
 .skills_container > h1 {
     width: 50%;
     align-items: center;
     justify-content: center;
+    margin: 40px auto 10px auto;
 }
 
-.skills_row {
+.skill {
     display: flex;
-    justify-content: space-evenly;
-    width: 70%;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid #c5c4c4;
 }
 
-.skills_row > .skill_logo {
-    margin: 25px;
+.skill_name {
+    flex: 0.5;
+}
+
+.skill_logo {
+    flex: 0.5;
+}
+
+.skill_logo > img {
+    width: 75px;
+    object-fit: contain;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.skill_logo_big > img {
+    width: 50px;
 }
 
 /*--------------------About page-----------------------*/
@@ -184,9 +196,6 @@ h1 {
     width: 50%;
     margin: auto;
 }
-
-
-
 
 /*--------------------------Resume page--------------*/
 
@@ -303,108 +312,4 @@ footer {
     background-color:#090A0E;
 }
 
-
-
-/*----------------------new home page ----------------*/
-.landing_window {
-    height: 100vh;
-    background-color: #DBDBD6;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    height: 700px;
-    margin: auto;
-}
-
-.intro_image {
-    opacity: 0.6;
-    flex: 0.5;
-}
-
-.intro_image > img {
-    width: 100%;
-    object-fit: contain;
-}
-
-.intro_bio {
-    flex: 0.5;
-    color: #BE431F;
-    text-align: center;
-}
-
-.intro_bio > h1 {
-    margin: 0;
-    width: 100%;
-}
-
-
 /*------------------------------------home_new1 and index page--------------------------------*/
-.landing_view {
-    height: 100vh;
-    background-color: #fff;
-}
-
-.bio_section {
-    display: flex;
-    width: 60%;
-    margin: auto;
-    display: flex;
-    text-align: center;
-}
-
-.bio {
-    width: 70%;
-    line-height: 2.5em;
-    margin: 0 auto;
-}
-
-.skills_title {
-    width: 100%;
-    height: 150px;
-    color: white;
-    background-color: black;
-    font-size: 2.5em;
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.skills_container {
-    width: 60%;
-    margin: auto;
-}
-
-.skills_container > h1 {
-    margin: 40px auto 10px auto;
-}
-
-.skill {
-    display: flex;
-    width: 90%;
-    height: 100px;
-    text-align: center;
-    align-items: center;
-    border-bottom: 2px solid #c5c4c4;
-}
-
-.skill_name {
-    flex: 0.5;
-}
-
-.skill_logo {
-    flex: 0.5;
-}
-
-.skill_logo > img {
-    width: 75px;
-    object-fit: contain;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.skill_logo_big > img {
-    width: 50px;
-}
