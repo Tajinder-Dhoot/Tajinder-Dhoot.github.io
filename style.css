@@ -302,6 +302,47 @@ button {
     color: #090A0E;
 }
 
+/***********************todo page***********************/
+
+#getToDoContainer {
+    width: 100%;
+    height: auto;
+}
+
+#getToDoContainer button {
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+}
+
+/* #getToDoContainer button:hover {
+    opacity: 0.6;
+} */
+
+#getToDoContainer button:active {
+    background-color: #42855B;
+}
+
+#displayAllToDo {
+    width: 100%;
+    height: auto;
+    background-color: #9AB19A;
+}
+
+#getToDo {
+    display: block;
+    height: 100px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+p {
+    height: 50px;
+    width: 100%;
+}
+
 /*----------------------- Footer -----------------------*/
 footer {
     display: flex;
